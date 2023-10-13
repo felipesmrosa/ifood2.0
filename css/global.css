@@ -1,0 +1,28 @@
+/* :root {
+    --azulE: #0D2859;
+    --azulC: #2E60AB;
+    --amarelo: #FECA06;
+    --branco: #ffffff;
+    --preto: #000000;
+} */
+:root {
+    --cor-1: #d6e9ff;
+    --cor-2: #88b4e7;
+    --cor-3: #5d8cc0;
+    --cor-4: #586f89;
+    --cor-5: #34febb;
+    --cor-6: #32ae85;
+    --cor-7: #42675a;
+    --cor-8: #ffffff;
+    --cor-9: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aleo', serif;
+    scroll-behavior: smooth;
+}
+a {
+    color: var(--preto);
+}

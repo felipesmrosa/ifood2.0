@@ -1,0 +1,182 @@
+#header {
+    display: flex;
+    align-items: center;
+    background: var(--cor-3);
+    border-top: 2px solid var(--cor-2);
+    width: 100%;
+    height: 3rem;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    margin: 0;
+    color: var(--cor-1);
+}
+#btn-mobile {
+    display: none;
+    color: var(--cor-1) !important;
+}
+input#quantity {
+    width: 7%;
+    padding: 0px 3px;
+}
+button#remover {
+    background: red;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 28px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }     
+    #hamburguer {
+        width: 30px;
+        top: 0.3rem;
+        border-top: 3px solid;
+        display: block;
+        position: relative;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #menu {
+        padding: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        background: var(--cor-3);
+        color: var(--cor-4);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        text-align: center;
+    }
+    ul.dropdown-menu.p-2.show li {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        border-bottom: 1px solid;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    } 
+    li#tchau {
+        display: block;
+    }
+    #nav.active #menu {
+        height: 136vh;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }     
+    #hamburguer {
+        width: 30px;
+        top: 0.3rem;
+        border-top: 3px solid;
+        display: block;
+        position: relative;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: auto;
+        right: 0;
+        background: var(--cor-3);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    li {
+        border-bottom: 1px solid var(--cor-4);
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    } 
+    li#tchau {
+        display: block;
+    }
+    #nav.active #menu {
+        height: 209vh;
+        visibility: visible;
+        padding: 0;
+        padding-bottom: 9rem;
+    }
+    ul.dropdown-menu.p-2.show {
+        border: 2px solid var(--cor-4);
+        background: var(--cor-2);
+        width: 20rem;
+        inset: 0px auto auto -35px !important;
+    }
+}

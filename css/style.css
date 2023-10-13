@@ -1,0 +1,328 @@
+@import url("global.css");
+@import url("menuHamburguer.css");
+
+header {
+    background-color: var(--cor-4);
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+svg.feather.feather-arrow-up{
+    width: 100%;
+    height: 2.5rem;
+}
+.gotopbtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: var(--cor-4);
+    bottom: 80px;
+    right: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 90px;
+    color: var(--amarelo);
+    box-shadow: 0px 0px 10px 0px var(--amarelo);
+}
+img#logoHamburgueria {
+    border-radius: 50%;
+    border: 4px solid var(--cor-3);
+    max-width: 10%;
+}
+hr#separador {
+    height: 0.2rem;
+    background: var(--cor-4);
+    border: none;
+}
+h1#titulo {
+    padding-top: 2.5rem;
+    padding-bottom: 0rem;
+}
+img#logo {
+    max-width: 35%;
+}
+.w50 {
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem 10px;
+}
+header#header nav#nav ul#menu li a#menulink:hover {
+    color: var(--cor-5);
+}
+
+header#header nav#nav ul#menu li a#menulink {
+    color: var(--cor-1);
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+}
+button.btn.btn-secondary.dropdown-toggle {
+    background: transparent;
+    border: transparent;
+    font-family: 'Aleo', serif;
+    font-size: 22px;
+    padding: 0;
+    color: var(--cor-1);
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--azulC);
+    border-top: 2px solid var(--amarelo);
+    width: 100%;
+    height: 3rem;
+    font-size: 19px;
+}
+img#vitrine {
+    width: 95%;
+    margin: 3rem 0;
+}
+section.banner {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../img/banner.png);
+    background-repeat: round;
+    background-size: cover;
+    text-align: center;
+    padding: 90px 0;
+    color: white;
+    box-shadow: 0px 15px 33px -16px var(--preto);
+}
+section.bannerIndisponivel {
+    width: 100%;
+    height: 48rem;
+    background-image: url(../img/bannerIndisponivel.png);
+    border-bottom: 2px solid var(--amarelo);
+    border-top: 2px solid var(--amarelo);
+    background-repeat: round;
+    background-size: cover;
+    box-shadow: 0px 15px 33px -16px var(--preto);
+}
+section.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+}
+img#vitrineMenu {
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 0px 1px 15px 4px var(--cor-4);
+    height: 6rem;
+    border: 3px solid var(--amarelo);
+}
+section.menuFotos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 61px 0;
+}
+section.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 20rem;
+}
+.card {
+    text-align: center;
+}
+.w33 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+.caixadeTexto {
+    background: var(--branco);
+    border: 3px solid var(--cor-4);
+    border-radius: 6px;
+    padding: 20px 0px;
+    color: var(--cor-4);
+    box-shadow: 0px 0px 12px 2px var(--cor-4);
+}
+.informacoes {
+    background: #fff;
+    padding: 15px 0 26px 0;
+}
+.produto {
+    border: 2px solid var(--cor-4);
+    background: var(--cor-4);
+    box-shadow: 0px 0px 12px -1px var(--cor-4);
+}
+a#linkProduto:hover {
+    background: var(--amarelo);
+    color: var(--azulC);
+}
+img#vitrineMenu:hover {
+    transform: scale(1.03);
+}
+h3#service {
+    line-height: 0.5rem;
+}
+.w20 {
+    width: 20%;
+    padding: 0 10px;
+}
+.w33 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--cor-4);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+span#textosRodape {
+    color: var(--cor-1);
+}
+img#imgFooter {
+    display: none;
+}
+@media screen and (min-width: 1440px) {
+    img#imgFooter {
+        display: block !important;
+    }
+    footer {
+        gap: 20rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1439px) {
+    footer {
+        position: relative;   
+    }
+    img#imgFooter {
+        display: block;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+    a#menulink {
+        text-decoration: none;
+        color: var(--cor-1);
+    }
+    img#vitrineMenu {
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0px 1px 15px 4px var(--cor-4);
+        height: 5.5rem;
+        border: 3px solid var(--amarelo);
+    }
+    img#contatoRodape {
+        max-width: 100%;
+    }
+    .w20 {
+        width: 50%;
+        padding: 0 10px 15px;
+    }
+    .w33.cards {
+        width: 100%;
+        padding: 0 10px 20px;
+    }
+    .gotopbtn {
+        display: none;
+    }
+    section.cards {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 4rem;
+        height: 44rem !important;
+    }
+    .wrapper {
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    a#menulink {
+        text-decoration: none;
+        color: var(--cor-1);
+    }
+    section.banner {
+        background-image: url(../img/bannermobile.png);
+    }
+    header,
+    .menu{
+        text-align: center;
+        height: auto;
+    }
+    .w50.logo {
+        margin-bottom: 0px;
+    }
+    .w20 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .w50, .w33 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    img#vitrineMenu {
+        width: 90%;
+        height: 6.5rem;
+    }
+    section.menuFotos {
+        padding: 45px 0px 15px;
+    }
+    img#vitrine {
+        width: 50%;
+        border-radius: 50%;
+        border: 5px solid var(--cor-2);
+    }
+    section.conteudo {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+    }
+    .gotopbtn {
+        display: none;
+    }
+    img#logo {
+        max-width: 15%;
+    }
+    a#menulink\ desktop {
+        display: none;
+    }
+    section.cards {
+        height: auto;
+        padding: 1rem 0px 1rem 0rem;
+    }
+    footer {
+        height: auto;
+        position: relative;
+        top: 2rem;
+    }
+    img#contatoRodape {
+        width: 22%;
+    }
+    .caixadeTexto {
+        padding: 20px 20px;
+    }
+    .cart-container.show-cart-container {
+        position: absolute;
+        overflow-y: scroll;
+        background: var(--cor-3);
+        width: 95% !important;
+        height: 600px;
+        top: 32% !important;
+        left: 10px;
+        right: 0;
+        box-shadow: 0 0px 10px 0px var(--cor-1);
+        display: block;
+    }
+}
