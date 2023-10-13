@@ -1,0 +1,42 @@
+{
+    "restaurantes": [
+        {
+            "id": 1,
+            "nome": "XBurguinho",
+            "localizacao": "Rua Indaial",
+            "menu": [
+                {
+                    "id": 1,
+                    "nome": "X-Salada",
+                    "preco": 20,
+                    "imgBurguer": "img.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "X-Ovo",
+                    "preco": 15,
+                    "imgBurguer": "img.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "BestBurguer",
+            "localizacao": "Rua Luis Silva",
+            "menu": [
+                {
+                    "id": 1,
+                    "nome": "X-Lasanha",
+                    "preco": 30,
+                    "imgBurguer": "img.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "X-Bacon",
+                    "preco": 29,
+                    "imgBurguer": "img.jpg"
+                }
+            ]
+        }
+    ]
+}
