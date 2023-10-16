@@ -10,19 +10,19 @@
                     "id": 1,
                     "nome": "Combo Caseiro",
                     "preco": 20,
-                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
+                    "imgBurguer": "../img/hamburguer/01.jpg"
                 },
                 {
                     "id": 2,
                     "nome": "X-Ovo",
                     "preco": 15,
-                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
+                    "imgBurguer": "../img/hamburguer/02.jpg"
                 },
                 {
-                    "id": 2,
-                    "nome": "X-Ovo",
-                    "preco": 15,
-                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
+                    "id": 3,
+                    "nome": "X-Eggs",
+                    "preco": 20,
+                    "imgBurguer": "../img/hamburguer/03.jpg"
                 }
             ]
         },

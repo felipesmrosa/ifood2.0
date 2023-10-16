@@ -4,7 +4,7 @@ const hamburguerias = dados.restaurantes;
 let lista = document.querySelector(".lista");
 
 hamburguerias.forEach((hamburgueria) => {
-  // console.log(hamburgueria.menu[0].nome);
+  console.log(hamburgueria);
 
   let li = document.createElement("li"); //criei um <li></li>
   li.classList.add("li_Restaurantes");
