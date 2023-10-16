@@ -9,23 +9,18 @@ hamburguerias.forEach((hamburgueria) => {
   let li = document.createElement("li"); //criei um <li></li>
   li.classList.add("li_Restaurantes");
 
-  let a = document.createElement("a"); //Criei um <a></a>
-  a.classList.add("linkRestaurante");
-  a.href = "./pages/interna.html?id=" + hamburgueria.id;
-
   let div = document.createElement("div"); //Criei um <div></div>
   div.classList.add("restaurantes")
 
   div.innerHTML +=
   `
-    <img class="${hamburgueria.id}" id="logoRestaurante" src='${hamburgueria.logo}'>
-    <p>${hamburgueria.nome}</p>
+    <img class="${hamburgueria.menu[0].id}" id="logoRestaurante" src='${hamburgueria.menu[0].imgBurguer}'>
+    <h4>${hamburgueria.menu[0].nome}</h4>
+    <p>R$ ${hamburgueria.menu[0].preco}</p>
       
   `
-
-  li.appendChild(a);
   
-  a.appendChild(div); // Coloca esse <div></div> dentro da li criada
+  li.appendChild(div); // Coloca esse <div></div> dentro da li criada
   
   lista.appendChild(li); //Coloca a <li></li> dentro da <ul></ul> com class lista la no html
 });

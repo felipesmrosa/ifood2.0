@@ -3,38 +3,46 @@
         {
             "id": 1,
             "nome": "XBurguinho",
+            "logo": "../img/hamburguerias/xburguinho.jpg",
             "localizacao": "Rua Indaial",
             "menu": [
                 {
                     "id": 1,
-                    "nome": "X-Salada",
+                    "nome": "Combo Caseiro",
                     "preco": 20,
-                    "imgBurguer": "img.jpg"
+                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
                 },
                 {
                     "id": 2,
                     "nome": "X-Ovo",
                     "preco": 15,
-                    "imgBurguer": "img.jpg"
+                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "X-Ovo",
+                    "preco": 15,
+                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
                 }
             ]
         },
         {
             "id": 2,
             "nome": "BestBurguer",
+            "logo": "../img/hamburguerias/bestBurguer.png",
             "localizacao": "Rua Luis Silva",
             "menu": [
                 {
                     "id": 1,
                     "nome": "X-Lasanha",
                     "preco": 30,
-                    "imgBurguer": "img.jpg"
+                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
                 },
                 {
                     "id": 2,
                     "nome": "X-Bacon",
                     "preco": 29,
-                    "imgBurguer": "img.jpg"
+                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
                 }
             ]
         }
