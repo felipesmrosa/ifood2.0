@@ -16,6 +16,7 @@
     --cor-8: #ffffff;
     --cor-9: #000000;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,11 @@
     font-family: 'Aleo', serif;
     scroll-behavior: smooth;
 }
+
 a {
     color: var(--preto);
+}
+
+.modal-backdrop.fade.show {
+    display: none;
 }

@@ -1,6 +1,7 @@
 @import url("global.css");
 @import url("menuHamburguer.css");
 @import url("listaRestaurantes.css");
+@import url("carrinho.css");
 
 header {
     background-color: var(--cor-4);
@@ -43,6 +44,14 @@ header#header nav#nav ul#menu li a#menulink {
     color: var(--cor-1);
     text-decoration: none;
     transition: color .5s ease-in-out;
+}
+button.btn.btn-primary.historico {
+    background: transparent !important;
+    color: var(--cor-8) !important;
+    padding: 0;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 800;
 }
 button.btn.btn-secondary.dropdown-toggle {
     background: transparent;
@@ -133,28 +142,13 @@ section.cards {
     background: #fff;
     padding: 15px 0 26px 0;
 }
+section#hamburguerias {
+    margin: 6rem 0;
+}
 .produto {
     border: 2px solid var(--cor-4);
     background: var(--cor-4);
     box-shadow: 0px 0px 12px -1px var(--cor-4);
-}
-a#linkProduto:hover {
-    background: var(--amarelo);
-    color: var(--azulC);
-}
-img#vitrineMenu:hover {
-    transform: scale(1.03);
-}
-h3#service {
-    line-height: 0.5rem;
-}
-.w20 {
-    width: 20%;
-    padding: 0 10px;
-}
-.w33 {
-    width: 33.3%;
-    padding: 0 10px;
 }
 footer {
     position: fixed;

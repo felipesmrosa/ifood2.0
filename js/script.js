@@ -19,7 +19,8 @@ hamburguerias.forEach((hamburgueria) => {
   div.innerHTML +=
   `
     <img class="${hamburgueria.id}" id="logoRestaurante" src='${hamburgueria.logo}'>
-    <p>${hamburgueria.nome}</p>
+    <p style="margin: 1.5rem 0 0 0; font-size: 1.75rem;">${hamburgueria.nome}</p>
+    <p">${hamburgueria.localizacao}</p>
       
   `
 

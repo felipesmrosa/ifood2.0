@@ -33,6 +33,11 @@ button#remover {
 
 
 @media screen and (max-width: 1080px) {
+    li.li_Restaurantes {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
     #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
@@ -101,7 +106,7 @@ button#remover {
         display: block;
     }
     #nav.active #menu {
-        height: 136vh;
+        height: 79vh;
         visibility: visible;
     }
 }
@@ -168,7 +173,7 @@ button#remover {
         display: block;
     }
     #nav.active #menu {
-        height: 209vh;
+        height: 79vh;
         visibility: visible;
         padding: 0;
         padding-bottom: 9rem;

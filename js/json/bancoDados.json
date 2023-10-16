@@ -8,21 +8,33 @@
             "menu": [
                 {
                     "id": 1,
-                    "nome": "Combo Caseiro",
-                    "preco": 20,
+                    "nome": "X-Salada",
+                    "preco": 15,
                     "imgBurguer": "../img/hamburguer/01.jpg"
                 },
                 {
                     "id": 2,
-                    "nome": "X-Ovo",
-                    "preco": 15,
+                    "nome": "Duplo Picanha",
+                    "preco": 44.90,
                     "imgBurguer": "../img/hamburguer/02.jpg"
                 },
                 {
                     "id": 3,
-                    "nome": "X-Eggs",
+                    "nome": "X-imples",
                     "preco": 20,
                     "imgBurguer": "../img/hamburguer/03.jpg"
+                },
+                {
+                    "id": 4,
+                    "nome": "Duplo Bacon",
+                    "preco": 30,
+                    "imgBurguer": "../img/hamburguer/04.jpg"
+                },
+                {
+                    "id": 5,
+                    "nome": "Vegano",
+                    "preco": 14.90,
+                    "imgBurguer": "../img/hamburguer/05.jpg"
                 }
             ]
         },
@@ -30,21 +42,7 @@
             "id": 2,
             "nome": "BestBurguer",
             "logo": "../img/hamburguerias/bestBurguer.png",
-            "localizacao": "Rua Luis Silva",
-            "menu": [
-                {
-                    "id": 1,
-                    "nome": "X-Lasanha",
-                    "preco": 30,
-                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
-                },
-                {
-                    "id": 2,
-                    "nome": "X-Bacon",
-                    "preco": 29,
-                    "imgBurguer": "../img/hamburguerias/xburguinho.jpg"
-                }
-            ]
+            "localizacao": "Rua Luis Silva"
         }
     ]
 }

@@ -4,10 +4,11 @@ ul.lista {
     justify-content: center;
     gap: 1rem;
     list-style: none;
+    padding: 0;
 }
 .restaurantes {
     background: var(--cor-4);
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,4 +17,41 @@ ul.lista {
 }
 p {
     margin: 0;
+}
+.modal-content {
+    color: var(--cor-1) !important;
+    background-color: var(--cor-4) !important;
+}
+button.btn.btn-secondary {
+    background: var(--cor-3) !important;
+}
+a {
+    text-decoration: none !important;
+    color: var(--cor-8) !important;
+}
+button.btn.btn-primary {
+    background: var(--cor-2) !important;
+    border: none !important;
+    color: var(--cor-9) !important;
+}
+.btn-close {
+    --bs-btn-close-bg: url(../img/x.svg) !important;
+}
+@media screen and (max-width: 768px) {
+    ul.lista {
+        flex-direction: column;
+    }
+    li.li_Restaurantes {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: transparent;
+    }
 }

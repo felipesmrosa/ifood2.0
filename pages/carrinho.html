@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../css/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>GruppeFood</title>
+</head>
+
+<body>
+  <header id="back">
+    <div class="w50 logo">
+      <a href="../index.html">
+        <img id="logo" src="../img/logo.png" alt="LOGO" />
+      </a>
+    </div>
+  </header>
+
+  <header id="header">
+    <nav id="nav">
+      <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        Menu
+        <span id="hamburguer"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a id="menulink" href="../index.html">INÍCIO</a></li>
+        <li><a id="menulink" href="../index.html#hamburguerias">HAMBURGUERIAS</a></li>
+        <li><a id="menulink" href="./carrinho.html">CARRINHO</a></li>
+        <li>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary historico" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            PEÇA NOVAMENTE
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Histórico de Pedidos</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul id="ul_carrinho">
+                    <li id="li_carrinho">
+                      <div class="produtoCarrinho">
+                        <img class="prato" src="../img/hamburguer/01.jpg" alt="">
+                        <span id="descricoes_produto">
+                          <p>Nome do Prato</p>
+                          <p style="margin-bottom: 1rem; color: var(--cor-2);">Restaurante</p>
+                          <p>Preço do Prato</p>
+                          <p style="color: var(--cor-2);">Forma de Pagamento</p>
+                        </span>
+                      </div>
+                    </li>
+                    <hr>
+                    <li id="li_carrinho">
+                      <div class="produtoCarrinho">
+                        <img class="prato" src="../img/hamburguer/01.jpg" alt="">
+                        <span id="descricoes_produto">
+                          <p>Nome do Prato</p>
+                          <p style="margin-bottom: 1rem; color: var(--cor-2);">Restaurante</p>
+                          <p>Preço do Prato</p>
+                          <p style="color: var(--cor-2);">Forma de Pagamento</p>
+                        </span>
+                      </div>
+                    </li>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="conteudo">
+    <div class="carrinho">
+      <ul id="ul_carrinho">
+        <li id="li_carrinho">
+          <div class="produtoCarrinho">
+            <img class="prato" src="../img/hamburguer/01.jpg" alt="">
+            <span id="descricoes_produto">
+              <h5>Nome do Prato</h5>
+              <p style="margin-bottom: 1rem;">Restaurante</p>
+              <h5>Preço do Prato</h5>
+              <p>Forma de Pagamento</p>
+            </span>
+            <button id="del_product"><i data-feather="trash-2"></i></button>
+            <div class="btn_quantidade">
+              <button id="minus"><i data-feather="minus"></i></button>
+              <span id="quantity">0</span>
+              <button id="plus"><i data-feather="plus"></i></button>
+            </div>
+          </div>
+        </li>
+        <hr class="separarProdutos">
+        <li id="li_carrinho">
+          <div class="produtoCarrinho">
+            <img class="prato" src="../img/hamburguer/02.jpg" alt="">
+            <span id="descricoes_produto">
+              <h5>Nome do Prato</h5>
+              <p style="margin-bottom: 1rem;">Restaurante</p>
+              <h5>Preço do Prato</h5>
+              <p>Forma de Pagamento</p>
+            </span>
+            <button id="del_product"><i data-feather="trash-2"></i></button>
+            <div class="btn_quantidade">
+              <button id="minus"><i data-feather="minus"></i></button>
+              <span id="quantity">0</span>
+              <button id="plus"><i data-feather="plus"></i></button>
+            </div>
+          </div>
+        </li>
+        <hr class="separarProdutos">
+      </ul>
+      <span class="total_compras">
+        <h2>TOTAL:</h2>
+        <h5>R$50</h5>
+      </span>
+      <button type="submit" id="finalizarPedido" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Finalizar Pedido
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Finalizar Pedido</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telefone para Contato</label>
+                <input type="phone" class="form-control" id="telefone">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Endereço</label>
+                <input type="mail" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Número</label>
+                <input type="mail" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf">
+              </div>
+              <label for="" class="form-label">Pagamento</label>
+              <select class="form-select" aria-label="Default select example">
+                <option disabled selected>Forma de Pagamento (Somente na entrega)</option>
+                <option value="1">PIX</option>
+                <option value="2">Dinheiro</option>
+                <option value="3">Cartão de Crédito</option>
+                <option value="4">Cartão de Débito</option>
+              </select>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Observações</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Finalizar Pedido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img id="imgFooter" src="../img/logo.png" alt="" />
+    <span id="textosRodape">
+      <br />
+      <b>Email: </b>
+      <p>contato@gruppefood.com.br</p>
+      <b>Telefone: </b>
+      <p>47991424212</p>
+    </span>
+  </footer>
+
+  <script>
+    $("#telefone").mask("(99) 99999-9999");
+    $("#cep").mask("99999-999");
+    $("#cpf").mask("999.999.999-99");
+  </script>
+
+  <script type="module" src="../js/quantidadeCarrinho.js"></script>
+  <script type="module" src="../js/hamburguer.js"></script>
+  <script>
+    feather.replace();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0/min.js"
+    integrity="sha256-/xUj+30JU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
