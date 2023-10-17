@@ -37,21 +37,25 @@ img#logo {
     padding: 0.5rem 10px;
 }
 header#header nav#nav ul#menu li a#menulink:hover {
-    color: var(--cor-5);
+    color: var(--cor-6) !important;
 }
 
 header#header nav#nav ul#menu li a#menulink {
-    color: var(--cor-1);
+    color: var(--cor-5) !important;
     text-decoration: none;
     transition: color .5s ease-in-out;
 }
+button.btn.btn-primary.historico:hover {
+    color: var(--cor-6) !important;
+}
 button.btn.btn-primary.historico {
     background: transparent !important;
-    color: var(--cor-8) !important;
+    color: var(--cor-5) !important;
     padding: 0;
     font-size: 22px;
     letter-spacing: 3px;
     font-weight: 800;
+    transition: color .5s ease-in-out;
 }
 button.btn.btn-secondary.dropdown-toggle {
     background: transparent;
@@ -143,7 +147,7 @@ section.cards {
     padding: 15px 0 26px 0;
 }
 section#hamburguerias {
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 .produto {
     border: 2px solid var(--cor-4);
@@ -163,7 +167,7 @@ footer {
     justify-content: space-evenly;
 }
 span#textosRodape {
-    color: var(--cor-1);
+    color: var(--cor-5);
 }
 img#imgFooter {
     display: none;
@@ -173,7 +177,7 @@ img#imgFooter {
         display: block !important;
     }
     footer {
-        gap: 20rem;
+        gap: 40rem;
         position: relative;
         display: flex;
         align-items: center;

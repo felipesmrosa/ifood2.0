@@ -25,10 +25,13 @@ if(hamburgueriaPorId) {
     div.innerHTML +=
       `
       <img class="teste" id="logoRestaurante" src='${prato.imgBurguer}'>
-      <h4>${prato.nome}</h4>
-      <p>R$ ${prato.preco}</p>
+      <h4 style="margin-top: 1rem;">${prato.nome}</h4>
+      <p style="
+        background: var(--cor-3);
+        border-radius: 28px;
+        padding: 0.1rem 0.5rem;">R$ ${prato.preco}</p>
 
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal123">
+      <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal123">
         Adicionar ao Carrinho
       </button>
 

@@ -3,6 +3,7 @@ section#conteudo {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 5rem;
 }
 section#conteudo .carrinho {
     width: 100%;
@@ -52,17 +53,18 @@ section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho {
     gap: 6rem;
     background-color: transparent;
 }
+section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho img.prato:hover {
+    border: 5px solid var(--cor-6);
+    cursor: pointer;
+}
+
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho img.prato {
     width: 20vh;
     height: 20vh;
     border-radius: 12px;
-    border: 5px solid var(--cor-4);
+    border: 5px solid var(--cor-5);
     transition: border .3s ease-in-out;
     margin: 1rem;
-}
-section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho img.prato:hover {
-    border: 5px solid var(--cor-2);
-    cursor: pointer;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho span#descricoes_produto h5,
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho span#descricoes_produto p{
@@ -71,25 +73,26 @@ section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho span#d
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho button#del_product {
     border-radius: 50%;
     padding: 0.3rem;
-    background: red;
+    background: var(--cor-2);
     border: 2px solid;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho .btn_quantidade button#minus {
     border-radius: 50% 0px 0px 50%;
     padding: 0.2rem;
-    background: var(--cor-2);
+    background: var(--cor-3);
     border: 2px solid;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho .btn_quantidade span#quantity {
-    background: var(--cor-1);
+    background: var(--cor-2);
+    color: var(--cor-5);
     padding: 0.2rem 1.5rem;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho .btn_quantidade button#plus {
     border-radius: 0px 50% 50% 0px;
     padding: 0.2rem;
-    background: var(--cor-2);
+    background: var(--cor-3);
     border: 2px solid;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho .btn_quantidade {

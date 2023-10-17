@@ -2,19 +2,24 @@ ul.lista {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     list-style: none;
     padding: 0;
     flex-wrap: wrap;
 }
 .restaurantes {
-    background: var(--cor-4);
-    padding: .5rem;
+    background: var(--cor-3);
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--cor-1);
+    border-radius: 20px 20px 13px 13px;
+    color: var(--cor-5);
+    box-shadow: 0px 0px 10px 0px var(--cor-3);
+}
+img#logoRestaurante {
+    border-radius: 7%;
 }
 p {
     margin: 0;
@@ -30,10 +35,18 @@ a {
     text-decoration: none !important;
     color: var(--cor-8) !important;
 }
+button.btn.btn-primary.w-100 {
+    background: var(--cor-2) !important;
+    color: var(--cor-5);
+    transition: border .1s ease-in-out;
+}
+button.btn.btn-primary.w-100:hover {
+    background: transparent !important;
+    border: 2px solid var(--cor-5) !important;
+}
 button.btn.btn-primary {
     background: var(--cor-2) !important;
     border: none !important;
-    color: var(--cor-9) !important;
 }
 .btn-close {
     --bs-btn-close-bg: url(../img/x.svg) !important;
