@@ -92,34 +92,17 @@
   <section id="conteudo">
     <div class="carrinho">
       <ul id="ul_carrinho">
-        <li id="li_carrinho">
-          <div class="produtoCarrinho">
-            <img class="prato" src="../img/hamburguer/01.jpg" alt="">
-            <span id="descricoes_produto">
-              <h5>Nome do Prato</h5>
-              <p style="margin-bottom: 1rem;">Restaurante</p>
-              <h5>Preço do Prato</h5>
-              <p>Forma de Pagamento</p>
-            </span>
-            <button id="del_product"><i data-feather="trash-2"></i></button>
-            <div class="btn_quantidade">
-              <button id="minus"><i data-feather="minus"></i></button>
-              <span id="quantity">0</span>
-              <button id="plus"><i data-feather="plus"></i></button>
-            </div>
-          </div>
-        </li>
         <hr class="separarProdutos">
         <li id="li_carrinho">
           <div class="produtoCarrinho">
             <img class="prato" src="../img/hamburguer/02.jpg" alt="">
-            <span id="descricoes_produto">
-              <h5>Nome do Prato</h5>
-              <p style="margin-bottom: 1rem;">Restaurante</p>
-              <h5>Preço do Prato</h5>
-              <p>Forma de Pagamento</p>
+            <span class="spanDescricoesProdutos" id="descricoes_produto">
+              <h5>X-Salada</h5>
+              <p style="margin-bottom: 1rem;">Rupper's Burguer</p>
+              <h5 class="price">R$15</h5>
+              <p>PIX</p>
             </span>
-            <button id="del_product"><i data-feather="trash-2"></i></button>
+            <button class="del_product"><i data-feather="trash-2"></i></button>
             <div class="btn_quantidade">
               <button id="minus"><i data-feather="minus"></i></button>
               <span id="quantity">0</span>
@@ -131,48 +114,53 @@
       </ul>
       <span class="total_compras">
         <h2>TOTAL:</h2>
-        <h5>R$50</h5>
+        <h5>R$15</h5>
       </span>
       <button type="submit" id="finalizarPedido" class="btn btn-primary" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
+        data-bs-target="#CARRINHOO">
         Finalizar Pedido
       </button>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade" id="CARRINHOO" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true"
+        style="display: none">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Finalizar Pedido</h1>
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Insira seus dados.
+              </h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="exampleFormControlInput1" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Telefone para Contato</label>
-                <input type="phone" class="form-control" id="telefone">
+                <input type="phone" class="form-control" id="telefone" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Endereço</label>
-                <input type="mail" class="form-control" id="exampleFormControlInput1">
+                <input type="mail" class="form-control" id="exampleFormControlInput1" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Número</label>
-                <input type="mail" class="form-control" id="exampleFormControlInput1">
+                <input type="mail" class="form-control" id="exampleFormControlInput1" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep">
+                <input type="text" class="form-control" id="cep" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">CPF</label>
-                <input type="text" class="form-control" id="cpf">
+                <input type="text" class="form-control" id="cpf" />
               </div>
               <label for="" class="form-label">Pagamento</label>
               <select class="form-select" aria-label="Default select example">
-                <option disabled selected>Forma de Pagamento (Somente na entrega)</option>
+                <option disabled selected>
+                  Forma de Pagamento (Somente na entrega)
+                </option>
                 <option value="1">PIX</option>
                 <option value="2">Dinheiro</option>
                 <option value="3">Cartão de Crédito</option>
@@ -184,8 +172,28 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Finalizar Pedido</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                Finalizar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2" tabindex="-1"
+        aria-hidden="true" style="display: none">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                Pedido Finalizado
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Seu pedido foi confirmado e finalizado! <br> Logo seu pedido chegará ao seu destino.</div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                Fechar
+              </button>
             </div>
           </div>
         </div>
@@ -210,6 +218,7 @@
     $("#cpf").mask("999.999.999-99");
   </script>
 
+<script type="module" src="../js/carrinho.js"></script>
   <script type="module" src="../js/quantidadeCarrinho.js"></script>
   <script type="module" src="../js/hamburguer.js"></script>
   <script>

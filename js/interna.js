@@ -3,18 +3,19 @@ import dados from "./json/bancoDados.json" assert { type: "json" };
 const hamburguerias = dados.restaurantes;
 let lista = document.querySelector(".lista");
 
-hamburguerias.forEach((hamburgueria) => {
-  // console.log(hamburgueria);
-  hamburgueria.menu.forEach((prato) => {
-    console.log(
-      "Restaurante: " +
-      hamburgueria.nome +
-      ", Prato: " +
-      prato.nome +
-      ", ID: " +
-      prato.id)
+const urlParams = new URLSearchParams(window.location.search);
+//console.log(urlParams)
 
+const idParams = urlParams.get("id");
+//console.log('idParams', idParams)
 
+const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
+  return hamburgueria.id === parseInt(idParams);
+})
+//console.log(hamburgueriaPorId)
+
+if(hamburgueriaPorId) {
+  hamburgueriaPorId.menu.forEach((prato) => {
     let li = document.createElement("li"); //criei um <li></li>
     li.classList.add("li_Restaurantes");
 
@@ -23,9 +24,9 @@ hamburguerias.forEach((hamburgueria) => {
 
     div.innerHTML +=
       `
-    <img class="${hamburgueria.id}" id="logoRestaurante" src='${prato.imgBurguer}'>
-    <h4>${prato.nome}</h4>
-    <p>R$ ${prato.preco}</p>
+      <img class="teste" id="logoRestaurante" src='${prato.imgBurguer}'>
+      <h4>${prato.nome}</h4>
+      <p>R$ ${prato.preco}</p>
 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal123">
         Adicionar ao Carrinho
@@ -35,11 +36,11 @@ hamburguerias.forEach((hamburgueria) => {
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">${hamburgueria.nome}</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">teste</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
           <div class="modal-body">
-            *nome do pedido Adicionado!
+            Pedido Adicionado ao Carrinho!
           </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="../pages/carrinho.html">Ir para o Carrinho</a></button>
@@ -48,11 +49,13 @@ hamburguerias.forEach((hamburgueria) => {
           </div>
       </div>
       </div>
-  `
-
+      `
     li.appendChild(div); // Coloca esse <div></div> dentro da li criada
 
     lista.appendChild(li); //Coloca a <li></li> dentro da <ul></ul> com class lista la no html
 
-  });
-});
+  })
+}else {
+  // O ID não corresponde a nenhuma hamburgueria, exiba uma mensagem de erro ou redirecione, se necessário
+  console.log("ID não encontrado");
+}

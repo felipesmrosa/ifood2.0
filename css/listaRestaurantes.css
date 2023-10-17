@@ -5,6 +5,7 @@ ul.lista {
     gap: 1rem;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
 }
 .restaurantes {
     background: var(--cor-4);

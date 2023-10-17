@@ -4,7 +4,8 @@
             "id": 1,
             "nome": "XBurguinho",
             "logo": "../img/hamburguerias/xburguinho.jpg",
-            "localizacao": "Rua Indaial",
+            "localizacao": "Rua Indaial, 750",
+            "link": "../pages/xburguinho.html",
             "menu": [
                 {
                     "id": 1,
@@ -42,7 +43,118 @@
             "id": 2,
             "nome": "BestBurguer",
             "logo": "../img/hamburguerias/bestBurguer.png",
-            "localizacao": "Rua Luis Silva"
+            "localizacao": "Av. Min. Victor Konder, 400",
+            "link": "../pages/bestBurguer.html",
+            "menu": [
+                {
+                    "id": 1,
+                    "nome": "X-Salada",
+                    "preco": 15,
+                    "imgBurguer": "../img/hamburguer/06.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "Duplo Picanha",
+                    "preco": 44.90,
+                    "imgBurguer": "../img/hamburguer/07.jpg"
+                },
+                {
+                    "id": 3,
+                    "nome": "X-imples",
+                    "preco": 20,
+                    "imgBurguer": "../img/hamburguer/08.jpg"
+                },
+                {
+                    "id": 4,
+                    "nome": "Duplo Bacon",
+                    "preco": 30,
+                    "imgBurguer": "../img/hamburguer/01.jpg"
+                },
+                {
+                    "id": 5,
+                    "nome": "Vegano",
+                    "preco": 14.90,
+                    "imgBurguer": "../img/hamburguer/02.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Rupper's Burguer",
+            "logo": "../img/hamburguerias/rupper.jpg",
+            "localizacao": "Rua Indaial, 2021",
+            "link": "../pages/ruppers.html",
+            "menu": [
+                {
+                    "id": 1,
+                    "nome": "X-Salada",
+                    "preco": 15,
+                    "imgBurguer": "../img/hamburguer/03.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "Duplo Picanha",
+                    "preco": 44.90,
+                    "imgBurguer": "../img/hamburguer/04.jpg"
+                },
+                {
+                    "id": 3,
+                    "nome": "X-imples",
+                    "preco": 20,
+                    "imgBurguer": "../img/hamburguer/05.jpg"
+                },
+                {
+                    "id": 4,
+                    "nome": "Duplo Bacon",
+                    "preco": 30,
+                    "imgBurguer": "../img/hamburguer/06.jpg"
+                },
+                {
+                    "id": 5,
+                    "nome": "Vegano",
+                    "preco": 14.90,
+                    "imgBurguer": "../img/hamburguer/07.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Santo Burguer",
+            "logo": "../img/hamburguerias/santo.jpg",
+            "localizacao": "Rua Indaial, 1985",
+            "link": "../pages/santos.html",
+            "menu": [
+                {
+                    "id": 1,
+                    "nome": "X-Salada",
+                    "preco": 15,
+                    "imgBurguer": "../img/hamburguer/08.jpg"
+                },
+                {
+                    "id": 2,
+                    "nome": "Duplo Picanha",
+                    "preco": 44.90,
+                    "imgBurguer": "../img/hamburguer/01.jpg"
+                },
+                {
+                    "id": 3,
+                    "nome": "X-imples",
+                    "preco": 20,
+                    "imgBurguer": "../img/hamburguer/02.jpg"
+                },
+                {
+                    "id": 4,
+                    "nome": "Duplo Bacon",
+                    "preco": 30,
+                    "imgBurguer": "../img/hamburguer/03.jpg"
+                },
+                {
+                    "id": 5,
+                    "nome": "Vegano",
+                    "preco": 14.90,
+                    "imgBurguer": "../img/hamburguer/04.jpg"
+                }
+            ]
         }
     ]
 }
