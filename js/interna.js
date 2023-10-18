@@ -11,30 +11,50 @@ const idParams = urlParams.get("id");
 
 const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
   return hamburgueria.id === parseInt(idParams);
-})
+});
 //console.log(hamburgueriaPorId)
+let cart = [];
 
-if(hamburgueriaPorId) {
+if (localStorage.getItem("@ifood-2")) {
+}
+
+if (hamburgueriaPorId) {
   hamburgueriaPorId.menu.forEach((prato) => {
     let li = document.createElement("li"); //criei um <li></li>
     li.classList.add("li_Restaurantes");
-    li.id  = "listinha";
+    li.id = "listinha";
 
     let div = document.createElement("div"); //Criei um <div></div>
-    div.classList.add("restaurantes")
+    div.classList.add("restaurantes");
 
-    div.innerHTML +=
-      `
+    div.innerHTML += `
       <img class="teste" id="logoRestaurante" src='${prato.imgBurguer}'>
       <h4 style="margin-top: 1rem;">${prato.nome}</h4>
       <p style="
-        background: var(--cor-3);
-        border-radius: 28px;
-        padding: 0.1rem 0.5rem;">R$ ${prato.preco}</p>
+      background: var(--cor-3);
+      border-radius: 28px;
+      padding: 0.1rem 0.5rem;">R$ ${prato.preco}</p>
+    `;
 
-      <button type="button" id="btn-addShoppingCart" class="btn btn-primary w-100 adicionarAoCarrinho" data-bs-toggle="modal" data-bs-target="#exampleModal123">
-        Adicionar ao Carrinho
-      </button>
+    let btnCart = document.createElement("button");
+    btnCart.classList.add("btn btn-primary w-100 adicionarAoCarrinho");
+
+    btnCart.addEventListener("click", (e) => {
+      e.preventDefault();
+      cart.push(prato);
+      console.log(cart);
+
+      localStorage.setItem("@ifood-2", JSON.stringify({ cart }));
+    });
+
+    // <button type="button" id="btn-addShoppingCart" class="btn btn-primary w-100 adicionarAoCarrinho" data-bs-toggle="modal" data-bs-target="#exampleModal123">
+    //     Adicionar ao Carrinho
+    //   </button>
+
+    div.innerHTML += `
+      
+
+      
 
       <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -53,13 +73,12 @@ if(hamburgueriaPorId) {
           </div>
       </div>
       </div>
-      `
+      `;
     li.appendChild(div); // Coloca esse <div></div> dentro da li criada
 
     lista.appendChild(li); //Coloca a <li></li> dentro da <ul></ul> com class lista la no html
-
-  })
-}else {
+  });
+} else {
   // O ID não corresponde a nenhuma hamburgueria
   console.log("ID não encontrado");
 }

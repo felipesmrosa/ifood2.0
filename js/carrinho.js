@@ -8,3 +8,10 @@
 //         console.log(pegaInfo)
 //     });
 // });
+
+if (localStorage.getItem("@ifood-2")) {
+  cart = JSON.parse(localStorage.getItem("@ifood-2"));
+}
+
+const cart = document.querySelector("#cart");
+cart.innerHTML = "";
