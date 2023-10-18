@@ -37,7 +37,7 @@
         <li><a id="menulink" href="carrinho.html">CARRINHO</a></li>
         <li>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary historico" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button onclick="showItems()" type="button" class="btn btn-primary historico" data-bs-toggle="modal" data-bs-target="#exampleModal">
             PEÇA NOVAMENTE
           </button>
 
@@ -114,8 +114,15 @@
   </footer>
 
   <script type="module" src="../js/interna.js"></script>
+  <script type="module" src="../js/carrinho.js"></script>
   <script type="module" src="../js/hamburguer.js"></script>
   <script>
+    var carrinho = [1, 2, 3];
+
+    function adicionarAoCarrinho(item) {
+      carrinho.push(item);
+    }
+
     feather.replace();
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0/min.js"

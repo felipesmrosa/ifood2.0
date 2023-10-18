@@ -33,14 +33,14 @@ section#conteudo .carrinho button#finalizarPedido {
     padding: 0.4rem 1rem;
     font-size: 1.2rem;
     border: 2px solid var(--cor-7) !important;
-    color: var(--cor-1) !important;
+    color: var(--cor-5) !important;
     border-radius: 28px;
-    background: var(--cor-4) !important;
+    background: var(--cor-3) !important;
     transition: all .4s ease-in-out;
 }
 section#conteudo .carrinho button#finalizarPedido:hover {
-    background: var(--cor-1) !important;
-    color: var(--cor-4) !important;
+    background: var(--cor-5) !important;
+    color: var(--cor-3) !important;
     cursor: pointer;
 }
 section#conteudo .carrinho ul#ul_carrinho li#li_carrinho {
@@ -118,6 +118,37 @@ section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho .btn_q
 .modal.fade.show .modal-dialog .modal-content .modal-body span#descricoes_produto h5,
 .modal.fade.show .modal-dialog .modal-content .modal-body span#descricoes_produto p{
     margin: 0;
+}
+.modal-footer, .modal-header {
+    border-color: var(--cor-5) !important;
+}
+.modal-header h1#exampleModalLabel {
+    color: var(--cor-5) !important;
+}
+li#li_carrinho .produtoCarrinho span#descricoes_produto p {
+    color: var(--cor-6);
+}
+svg.feather.feather-plus, svg.feather.feather-minus {
+    color: var(--cor-6);
+}
+input#exampleFormControlInput1,
+input#telefone,
+input#cep,
+select.form-select,
+textarea#exampleFormControlTextarea1,
+input#cpf {
+    resize: none;
+    outline: none;
+    background: var(--cor-3);
+    border: none;
+    box-shadow: inset 0px 0px 35px -20px var(--cor-5);
+    color: var(--cor-5);
+}
+textarea#exampleFormControlTextarea1 {
+    height: 7rem !important;
+}
+h1#exampleModalToggleLabel2, .modal-body {
+    color: var(--cor-5);
 }
 @media screen and (max-width: 850px) {
     section#conteudo .carrinho ul#ul_carrinho li#li_carrinho .produtoCarrinho {

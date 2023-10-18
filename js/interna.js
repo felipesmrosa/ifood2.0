@@ -18,6 +18,7 @@ if(hamburgueriaPorId) {
   hamburgueriaPorId.menu.forEach((prato) => {
     let li = document.createElement("li"); //criei um <li></li>
     li.classList.add("li_Restaurantes");
+    li.id  = "listinha";
 
     let div = document.createElement("div"); //Criei um <div></div>
     div.classList.add("restaurantes")
@@ -31,7 +32,7 @@ if(hamburgueriaPorId) {
         border-radius: 28px;
         padding: 0.1rem 0.5rem;">R$ ${prato.preco}</p>
 
-      <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal123">
+      <button type="button" id="btn-addShoppingCart" class="btn btn-primary w-100 adicionarAoCarrinho" data-bs-toggle="modal" data-bs-target="#exampleModal123">
         Adicionar ao Carrinho
       </button>
 
@@ -59,6 +60,6 @@ if(hamburgueriaPorId) {
 
   })
 }else {
-  // O ID não corresponde a nenhuma hamburgueria, exiba uma mensagem de erro ou redirecione, se necessário
+  // O ID não corresponde a nenhuma hamburgueria
   console.log("ID não encontrado");
 }

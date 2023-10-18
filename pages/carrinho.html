@@ -59,9 +59,9 @@
                         <img class="prato" src="../img/hamburguer/01.jpg" alt="">
                         <span id="descricoes_produto">
                           <p>Nome do Prato</p>
-                          <p style="margin-bottom: 1rem; color: var(--cor-2);">Restaurante</p>
+                          <p style="margin-bottom: 1rem; color: var(--cor-5);">Restaurante</p>
                           <p>Preço do Prato</p>
-                          <p style="color: var(--cor-2);">Forma de Pagamento</p>
+                          <p style="color: var(--cor-5);">Forma de Pagamento</p>
                         </span>
                       </div>
                     </li>
@@ -71,9 +71,9 @@
                         <img class="prato" src="../img/hamburguer/01.jpg" alt="">
                         <span id="descricoes_produto">
                           <p>Nome do Prato</p>
-                          <p style="margin-bottom: 1rem; color: var(--cor-2);">Restaurante</p>
+                          <p style="margin-bottom: 1rem; color: var(--cor-5);">Restaurante</p>
                           <p>Preço do Prato</p>
-                          <p style="color: var(--cor-2);">Forma de Pagamento</p>
+                          <p style="color: var(--cor-5);">Forma de Pagamento</p>
                         </span>
                       </div>
                     </li>
@@ -95,24 +95,6 @@
         <h1>MEU CARRINHO</h1>
       </center>
       <ul id="ul_carrinho">
-        <hr class="separarProdutos">
-        <li id="li_carrinho">
-          <div class="produtoCarrinho">
-            <img class="prato" src="../img/hamburguer/02.jpg" alt="">
-            <span class="spanDescricoesProdutos" id="descricoes_produto">
-              <h5>X-Salada</h5>
-              <p style="margin-bottom: 1rem;">Rupper's Burguer</p>
-              <h5 class="price">R$15</h5>
-              <p>PIX</p>
-            </span>
-            <button id="del_product"><i data-feather="trash-2"></i></button>
-            <div class="btn_quantidade">
-              <button id="minus"><i data-feather="minus"></i></button>
-              <span id="quantity">0</span>
-              <button id="plus"><i data-feather="plus"></i></button>
-            </div>
-          </div>
-        </li>
         <hr class="separarProdutos">
         <li id="li_carrinho">
           <div class="produtoCarrinho">
@@ -185,7 +167,7 @@
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Número</label>
-                <input type="mail" class="form-control" id="exampleFormControlInput1" />
+                <input type="text" class="form-control" id="exampleFormControlInput1" />
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">CEP</label>
@@ -251,14 +233,13 @@
     </span>
   </footer>
 
+  <script type="module" src="../js/quantidadeCarrinho.js"></script>
   <script>
     $("#telefone").mask("(99) 99999-9999");
     $("#cep").mask("99999-999");
     $("#cpf").mask("999.999.999-99");
   </script>
-
-<script type="module" src="../js/carrinho.js"></script>
-  <script type="module" src="../js/quantidadeCarrinho.js"></script>
+  <script type="module" src="../js/carrinho.js"></script>
   <script type="module" src="../js/hamburguer.js"></script>
   <script>
     feather.replace();

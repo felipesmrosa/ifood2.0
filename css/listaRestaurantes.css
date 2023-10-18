@@ -30,6 +30,8 @@ p {
 }
 button.btn.btn-secondary {
     background: var(--cor-3) !important;
+    color: var(--cor-5);
+    border-color: transparent;
 }
 a {
     text-decoration: none !important;
