@@ -16,6 +16,7 @@ const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
 let cart = [];
 
 if (localStorage.getItem("@ifood-2")) {
+  cart = JSON.parse(localStorage.getItem("@ifood-2"));
 }
 
 if (hamburgueriaPorId) {
