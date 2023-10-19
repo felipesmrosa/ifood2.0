@@ -16,6 +16,7 @@ const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
 let cart = [];
 
 if (localStorage.getItem("@ifood-2")) {
+
   cart = JSON.parse(localStorage.getItem("@ifood-2"));
 }
 
@@ -38,14 +39,22 @@ if (hamburgueriaPorId) {
     `;
 
     let btnCart = document.createElement("button");
-    btnCart.classList.add("btn btn-primary w-100 adicionarAoCarrinho");
+    btnCart.classList.add("btn");
+    btnCart.classList.add("btn-primary");
+    btnCart.classList.add("w-100");
+    btnCart.classList.add("adicionarAoCarrinho");
+    btnCart.setAttribute("data-bs-toggle", "modal");
+    btnCart.setAttribute("data-bs-target", "#exampleModal123");
+    btnCart.innerHTML = "Adicionar ao Carrinho";
+    // console.log(btnCart);
 
     btnCart.addEventListener("click", (e) => {
       e.preventDefault();
       cart.push(prato);
       console.log(cart);
+      const myJSON = JSON.stringify(cart);
 
-      localStorage.setItem("@ifood-2", JSON.stringify({ cart }));
+      localStorage.setItem("@ifood-2", myJSON);
     });
 
     // <button type="button" id="btn-addShoppingCart" class="btn btn-primary w-100 adicionarAoCarrinho" data-bs-toggle="modal" data-bs-target="#exampleModal123">
@@ -53,15 +62,11 @@ if (hamburgueriaPorId) {
     //   </button>
 
     div.innerHTML += `
-      
-
-      
-
       <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">teste</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">GruppeFoods</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
           <div class="modal-body">
@@ -76,6 +81,7 @@ if (hamburgueriaPorId) {
       </div>
       `;
     li.appendChild(div); // Coloca esse <div></div> dentro da li criada
+    div.appendChild(btnCart)
 
     lista.appendChild(li); //Coloca a <li></li> dentro da <ul></ul> com class lista la no html
   });

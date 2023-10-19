@@ -2,9 +2,14 @@ import dados from "./json/bancoDados.json" assert { type: "json" };
 
 const hamburguerias = dados.restaurantes;
 let lista = document.querySelector(".lista");
+let identify = document.querySelector(".identifyRestaurant");
 
 hamburguerias.forEach((hamburgueria) => {
   //console.log(hamburgueria.menu[0].nome);
+
+  let image = document.createElement("img")
+  image.classList
+
 
   let li = document.createElement("li"); //criei um <li></li>
   li.classList.add("li_Restaurantes");

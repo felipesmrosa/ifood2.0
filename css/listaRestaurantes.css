@@ -24,6 +24,11 @@ img#logoRestaurante {
 p {
     margin: 0;
 }
+.btn_quantidade button#minus p,
+.btn_quantidade button#plus p  {
+    margin: 0;
+    color: var(--cor-5);
+}
 .modal-content {
     color: var(--cor-1) !important;
     background-color: var(--cor-4) !important;
@@ -49,6 +54,16 @@ button.btn.btn-primary.w-100:hover {
 button.btn.btn-primary {
     background: var(--cor-2) !important;
     border: none !important;
+}
+button.btn.btn-primary.FINALPEDIDO {
+    display: flex;
+    margin: 0 auto;
+}
+.identifyRestaurant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .btn-close {
     --bs-btn-close-bg: url(../img/x.svg) !important;

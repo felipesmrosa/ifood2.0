@@ -4,6 +4,7 @@ section#conteudo {
     justify-content: center;
     flex-direction: column;
     margin: 5rem;
+    height: 29.2rem;
 }
 section#conteudo .carrinho {
     width: 100%;
