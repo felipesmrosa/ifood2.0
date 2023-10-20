@@ -2,6 +2,7 @@ import dados from "./json/bancoDados.json" assert { type: "json" };
 
 const hamburguerias = dados.restaurantes;
 let lista = document.querySelector(".lista");
+let identify = document.querySelector(".identifyRestaurant")
 
 const urlParams = new URLSearchParams(window.location.search);
 //console.log(urlParams)
@@ -10,18 +11,31 @@ const idParams = urlParams.get("id");
 //console.log('idParams', idParams)
 
 const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
-  return hamburgueria.id === parseInt(idParams);
+  return hamburgueria.id === parseInt(idParams)
 });
+
+console.log("hamburgueriaPorId", hamburgueriaPorId)
+
+identify.innerHTML = 
+`
+    <img src="${hamburgueriaPorId.logo}" id="funcionaa" alt="Logo de cada hamburgueria" style="
+      width: 10%;
+      border-radius: 50%;
+      ">
+      <h1>${hamburgueriaPorId.nome}</h1>
+      <h1 style="margin: 2rem 0;">MENU</h1>
+`;
+
 //console.log(hamburgueriaPorId)
 let cart = [];
 
 if (localStorage.getItem("@ifood-2")) {
-
   cart = JSON.parse(localStorage.getItem("@ifood-2"));
 }
 
-if (hamburgueriaPorId) {
+if (hamburgueriaPorId.id) {
   hamburgueriaPorId.menu.forEach((prato) => {
+
     let li = document.createElement("li"); //criei um <li></li>
     li.classList.add("li_Restaurantes");
     li.id = "listinha";
@@ -80,6 +94,9 @@ if (hamburgueriaPorId) {
       </div>
       </div>
       `;
+
+
+
     li.appendChild(div); // Coloca esse <div></div> dentro da li criada
     div.appendChild(btnCart)
 

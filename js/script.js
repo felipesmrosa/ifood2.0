@@ -2,14 +2,16 @@ import dados from "./json/bancoDados.json" assert { type: "json" };
 
 const hamburguerias = dados.restaurantes;
 let lista = document.querySelector(".lista");
-let identify = document.querySelector(".identifyRestaurant");
+// let identify = document.querySelector(".identifyRestaurant");
 
 hamburguerias.forEach((hamburgueria) => {
   //console.log(hamburgueria.menu[0].nome);
 
-  let image = document.createElement("img")
-  image.classList
+  // let imageRestaurante = document.createElement("imageRestaurante")
+  // imageRestaurante.classList.add("img_restaurant");
 
+  // let nameRestaurant = document.createElement("h1");
+  // let title_menu = document.createElement("h1");
 
   let li = document.createElement("li"); //criei um <li></li>
   li.classList.add("li_Restaurantes");
@@ -28,6 +30,10 @@ hamburguerias.forEach((hamburgueria) => {
     <p">${hamburgueria.localizacao}</p>
       
   `
+
+  // identify.appendChild(imageRestaurante);
+  // identify.appendChild(nameRestaurant);
+  // identify.appendChild(title_menu);
 
   li.appendChild(a);
   

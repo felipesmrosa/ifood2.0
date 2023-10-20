@@ -147,7 +147,7 @@ section.cards {
     padding: 15px 0 26px 0;
 }
 section#hamburguerias {
-    margin: 4rem 0;
+    margin: 1rem 0;
 }
 .produto {
     border: 2px solid var(--cor-4);
@@ -234,6 +234,9 @@ img#imgFooter {
     }
 }
 @media screen and (max-width: 768px) {
+    img#funcionaa {
+        width: 35% !important;
+    }
     a#menulink {
         text-decoration: none;
         color: var(--cor-1);

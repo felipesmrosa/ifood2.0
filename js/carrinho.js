@@ -4,6 +4,7 @@ if (localStorage.getItem("@ifood-2")) {
   cart = JSON.parse(localStorage.getItem("@ifood-2"));
 }
 
+console.log(cart)
 let section = document.querySelector("#conteudo"); //pego a section pelo ID
 
 let divSection = document.createElement("div"); //criei uma div
@@ -34,7 +35,7 @@ cart.forEach(infoCart => {
     <img class="prato" src="${infoCart.imgBurguer}" alt="">
     <span class="spanDescricoesProdutos" id="descricoes_produto">
       <h5>${infoCart.nome}</h5>
-      <p style="margin-bottom: 1rem;">nomeRestaurante (como pegar?)</p>
+      <p style="margin-bottom: 1rem;">Restaurante</p>
       <h5 class="price">R$ ${infoCart.preco}</h5>
     </span>
     `
@@ -89,9 +90,7 @@ let h2 = document.createElement("h2")
 h2.innerHTML = `TOTAL: R$${total}`;
 
 let buttonFinish = document.createElement("button");
-buttonFinish.classList.add("btn");
-buttonFinish.classList.add("btn-primary");
-buttonFinish.classList.add("FINALPEDIDO");
+buttonFinish.classList.add("btn","btn-primary","FINALPEDIDO");
 buttonFinish.setAttribute("data-bs-toggle", "modal");
 buttonFinish.setAttribute("data-bs-target", "#CARRINHOO");
 buttonFinish.innerHTML = "Finalizar";
