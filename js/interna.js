@@ -50,6 +50,7 @@ if (hamburgueriaPorId.id) {
       background: var(--cor-3);
       border-radius: 28px;
       padding: 0.1rem 0.5rem;">R$ ${prato.preco}</p>
+      <p style="display: none;">${prato.restaurante}</p>
     `;
 
     let btnCart = document.createElement("button");

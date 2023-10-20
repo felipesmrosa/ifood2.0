@@ -35,7 +35,7 @@ cart.forEach(infoCart => {
     <img class="prato" src="${infoCart.imgBurguer}" alt="">
     <span class="spanDescricoesProdutos" id="descricoes_produto">
       <h5>${infoCart.nome}</h5>
-      <p style="margin-bottom: 1rem;">Restaurante</p>
+      <p style="margin-bottom: 1rem;">${infoCart.restaurante}</p>
       <h5 class="price">R$ ${infoCart.preco}</h5>
     </span>
     `

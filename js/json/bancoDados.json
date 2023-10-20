@@ -11,31 +11,36 @@
                     "id": 1,
                     "nome": "X-Salada",
                     "preco": 15,
-                    "imgBurguer": "../img/hamburguer/01.jpg"
+                    "imgBurguer": "../img/hamburguer/01.jpg",
+                    "restaurante": "XBurguinho"
                 },
                 {
                     "id": 2,
                     "nome": "Duplo Picanha",
                     "preco": 44.90,
-                    "imgBurguer": "../img/hamburguer/02.jpg"
+                    "imgBurguer": "../img/hamburguer/02.jpg",
+                    "restaurante": "XBurguinho"
                 },
                 {
                     "id": 3,
                     "nome": "X-imples",
                     "preco": 20,
-                    "imgBurguer": "../img/hamburguer/03.jpg"
+                    "imgBurguer": "../img/hamburguer/03.jpg",
+                    "restaurante": "XBurguinho"
                 },
                 {
                     "id": 4,
                     "nome": "Duplo Bacon",
                     "preco": 30,
-                    "imgBurguer": "../img/hamburguer/04.jpg"
+                    "imgBurguer": "../img/hamburguer/04.jpg",
+                    "restaurante": "XBurguinho"
                 },
                 {
                     "id": 5,
                     "nome": "Vegano",
                     "preco": 14.90,
-                    "imgBurguer": "../img/hamburguer/05.jpg"
+                    "imgBurguer": "../img/hamburguer/05.jpg",
+                    "restaurante": "XBurguinho"
                 }
             ]
         },
@@ -50,31 +55,36 @@
                     "id": 1,
                     "nome": "X-Salada",
                     "preco": 15,
-                    "imgBurguer": "../img/hamburguer/06.jpg"
+                    "imgBurguer": "../img/hamburguer/06.jpg",
+                    "restaurante": "BestBurguer"
                 },
                 {
                     "id": 2,
                     "nome": "Duplo Picanha",
                     "preco": 44.90,
-                    "imgBurguer": "../img/hamburguer/07.jpg"
+                    "imgBurguer": "../img/hamburguer/07.jpg",
+                    "restaurante": "BestBurguer"
                 },
                 {
                     "id": 3,
                     "nome": "X-imples",
                     "preco": 20,
-                    "imgBurguer": "../img/hamburguer/08.jpg"
+                    "imgBurguer": "../img/hamburguer/08.jpg",
+                    "restaurante": "BestBurguer"
                 },
                 {
                     "id": 4,
                     "nome": "Duplo Bacon",
                     "preco": 30,
-                    "imgBurguer": "../img/hamburguer/01.jpg"
+                    "imgBurguer": "../img/hamburguer/01.jpg",
+                    "restaurante": "BestBurguer"
                 },
                 {
                     "id": 5,
                     "nome": "Vegano",
                     "preco": 14.90,
-                    "imgBurguer": "../img/hamburguer/02.jpg"
+                    "imgBurguer": "../img/hamburguer/02.jpg",
+                    "restaurante": "BestBurguer"
                 }
             ]
         },
@@ -89,31 +99,36 @@
                     "id": 1,
                     "nome": "X-Salada",
                     "preco": 15,
-                    "imgBurguer": "../img/hamburguer/03.jpg"
+                    "imgBurguer": "../img/hamburguer/03.jpg",
+                    "restaurante": "Rupper's Burguer"
                 },
                 {
                     "id": 2,
                     "nome": "Duplo Picanha",
                     "preco": 44.90,
-                    "imgBurguer": "../img/hamburguer/04.jpg"
+                    "imgBurguer": "../img/hamburguer/04.jpg",
+                    "restaurante": "Rupper's Burguer"
                 },
                 {
                     "id": 3,
                     "nome": "X-imples",
                     "preco": 20,
-                    "imgBurguer": "../img/hamburguer/05.jpg"
+                    "imgBurguer": "../img/hamburguer/05.jpg",
+                    "restaurante": "Rupper's Burguer"
                 },
                 {
                     "id": 4,
                     "nome": "Duplo Bacon",
                     "preco": 30,
-                    "imgBurguer": "../img/hamburguer/06.jpg"
+                    "imgBurguer": "../img/hamburguer/06.jpg",
+                    "restaurante": "Rupper's Burguer"
                 },
                 {
                     "id": 5,
                     "nome": "Vegano",
                     "preco": 14.90,
-                    "imgBurguer": "../img/hamburguer/07.jpg"
+                    "imgBurguer": "../img/hamburguer/07.jpg",
+                    "restaurante": "Rupper's Burguer"
                 }
             ]
         },
@@ -128,31 +143,36 @@
                     "id": 1,
                     "nome": "X-Salada",
                     "preco": 15,
-                    "imgBurguer": "../img/hamburguer/08.jpg"
+                    "imgBurguer": "../img/hamburguer/08.jpg",
+                    "restaurante": "Santo Burguer"
                 },
                 {
                     "id": 2,
                     "nome": "Duplo Picanha",
                     "preco": 44.90,
-                    "imgBurguer": "../img/hamburguer/01.jpg"
+                    "imgBurguer": "../img/hamburguer/01.jpg",
+                    "restaurante": "Santo Burguer"
                 },
                 {
                     "id": 3,
                     "nome": "X-imples",
                     "preco": 20,
-                    "imgBurguer": "../img/hamburguer/02.jpg"
+                    "imgBurguer": "../img/hamburguer/02.jpg",
+                    "restaurante": "Santo Burguer"
                 },
                 {
                     "id": 4,
                     "nome": "Duplo Bacon",
                     "preco": 30,
-                    "imgBurguer": "../img/hamburguer/03.jpg"
+                    "imgBurguer": "../img/hamburguer/03.jpg",
+                    "restaurante": "Santo Burguer"
                 },
                 {
                     "id": 5,
                     "nome": "Vegano",
                     "preco": 14.90,
-                    "imgBurguer": "../img/hamburguer/04.jpg"
+                    "imgBurguer": "../img/hamburguer/04.jpg",
+                    "restaurante": "Santo Burguer"
                 }
             ]
         }
