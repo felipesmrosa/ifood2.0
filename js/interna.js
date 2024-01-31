@@ -14,8 +14,6 @@ const hamburgueriaPorId = hamburguerias.find((hamburgueria) => {
   return hamburgueria.id === parseInt(idParams)
 });
 
-console.log("hamburgueriaPorId", hamburgueriaPorId)
-
 identify.innerHTML = 
 `
     <img src="${hamburgueriaPorId.logo}" id="funcionaa" alt="Logo de cada hamburgueria" style="
